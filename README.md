@@ -62,15 +62,13 @@ Freely inspired by pop-shell.
 
 ## TODO
 * [x] Set Keybindings
-* [ ] CapsLock to Esc remap
-* [ ] Change key repeat speed
 * [ ] Enable laptop controls
     * [ ] Volume
     * [ ] Screen Brightness
     * [ ] Trackpad tap
 * [ ] Patch / additional functionality
     * [x] Move windows
-    * [ ] Gaps
+    * [x] Gaps + smart gaps option
     * [ ] Alt-Tab (no-preview)
     * [ ] Directional navigation
     * [ ] Status/Systray
