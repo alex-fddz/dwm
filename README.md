@@ -34,23 +34,24 @@ Freely inspired by pop-shell.
     * +`Shift`: Move active window to previous screen.
 
 ### Layouts
-* `Super`+`g`: Float window.
-    * +`Shift`: Un-float window.
+* `Super`+`g`: Float and un-float window.
 * `Super`+`y`: Floating layout.
     * +`Shift`: Tiling (Master-Stack) layout.
 * `Super`+`m`: Monocle layout.
 
 ### Applications
-* `Super`+`b`: Browser (Firefox).
-* `Super`+`e`: Email client.
-* `Super`+`f`: File manager.
 * `Super`+`t`: Terminal.
+* `Super`+`f`: File manager.
+* `Super`+`b`: Internet Browser.
+* `Super`+`e`: Email client.
+* `Super`+`c`: Calendar.
 
 ### Utilities
 * `Alt`+`Space`: Application launcher (dmenu).
 * `Super`+`v`: Clipboard manager.
 * `Super`+`p`: Display configuration (arandr).
 * `Alt`+`.`: Emoji selector.
+* `Super`+`Space`: Keyboard layout switcher.
 
 ### dwm
 * `Super`+`Shift`+`Q`: Quit dwm cleanly.
@@ -59,17 +60,20 @@ Freely inspired by pop-shell.
 ## Patches
 
 ## TODO
-* [ ] Set Keybindings
+* [x] Set Keybindings
 * [ ] CapsLock to Esc remap
+* [ ] Change key repeat speed
 * [ ] Enable laptop controls
     * [ ] Volume
     * [ ] Screen Brightness
     * [ ] Trackpad tap
 * [ ] Patch / additional functionality
+    * [ ] Move windows
     * [ ] Gaps
     * [ ] Alt-Tab (no-preview)
     * [ ] Directional navigation
     * [ ] Status/Systray
+    - [ ] Monocle and Floating layout toggles
     * [ ] Hide empty tags/workspaces
     * [ ] Colors/pywal
     * [ ] Top bar color
