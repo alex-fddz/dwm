@@ -58,6 +58,7 @@ Freely inspired by pop-shell.
 * `Super`+`Shift`+`B`: Show/hide top bar.
 
 ## Patches
+`#movestack`
 
 ## TODO
 * [x] Set Keybindings
@@ -68,7 +69,7 @@ Freely inspired by pop-shell.
     * [ ] Screen Brightness
     * [ ] Trackpad tap
 * [ ] Patch / additional functionality
-    * [ ] Move windows
+    * [x] Move windows
     * [ ] Gaps
     * [ ] Alt-Tab (no-preview)
     * [ ] Directional navigation
