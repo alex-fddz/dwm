@@ -35,9 +35,9 @@ Freely inspired by pop-shell.
 
 ### Layouts
 * `Super`+`g`: Float and un-float window.
-* `Super`+`y`: Floating layout.
-    * +`Shift`: Tiling (Master-Stack) layout.
-* `Super`+`m`: Monocle layout.
+* `Super`+`y`: Toggle Floating layout.
+    * +`Shift`: Set Tiling (Master-Stack) layout.
+* `Super`+`m`: Toggle Monocle layout.
 
 ### Applications
 * `Super`+`t`: Terminal.
@@ -72,7 +72,7 @@ Freely inspired by pop-shell.
     * [ ] Alt-Tab (no-preview)
     * [ ] Directional navigation
     * [ ] Status/Systray
-    - [ ] Monocle and Floating layout toggles
+    * [x] Monocle and Floating layout toggles
     * [ ] Hide empty tags/workspaces
     * [ ] Colors/pywal
     * [ ] Top bar color
