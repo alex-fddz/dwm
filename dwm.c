@@ -156,6 +156,7 @@ static void configure(Client *c);
 static void configurenotify(XEvent *e);
 static void configurerequest(XEvent *e);
 static Monitor *createmon(void);
+static void cyclelayout(const Arg *arg);
 static void destroynotify(XEvent *e);
 static void detach(Client *c);
 static void detachstack(Client *c);
@@ -647,6 +648,23 @@ createmon(void)
 	m->lt[1] = &layouts[1 % LENGTH(layouts)];
 	strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
 	return m;
+}
+
+void
+cyclelayout(const Arg *arg) {
+  for (const Layout *l = &layouts[arg->ui]; l->symbol != NULL; l++) {
+    /* find the currently set layout (from ui to end) */
+    if (l == selmon->lt[selmon->sellt]) {
+      /* move to next layout or reset to start if at the end */
+      if ((l+1)->symbol != NULL)
+        setlayout(&((Arg) { .v = (l+1) }));
+      else
+        setlayout(&((Arg) { .v = layouts }));
+      return;
+    }
+  }
+  /* if no match was found, set the first layout (ui) */
+  setlayout(&((Arg) { .v = &layouts[arg->ui] }));
 }
 
 void
