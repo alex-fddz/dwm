@@ -28,9 +28,9 @@ Freely inspired by pop-shell.
     * +`Shift`: Make active window appear on all tags.
 
 ### Multi-monitor setup
-* `Super`+`,`: Focus next screen.
+* `Super`+`.`: Focus next screen (`>`).
     * +`Shift`: Move active window to next screen.
-* `Super`+`.`: Focus previous screen.
+* `Super`+`,`: Focus previous screen (`<`).
     * +`Shift`: Move active window to previous screen.
 
 ### Layouts
@@ -38,6 +38,7 @@ Freely inspired by pop-shell.
 * `Super`+`y`: Toggle Floating layout.
     * +`Shift`: Set Tiling (Master-Stack) layout.
 * `Super`+`m`: Toggle Monocle layout.
+* `Super`+`\`: Cycle through (extra) layouts.
 
 ### Applications
 * `Super`+`t`: Terminal.
@@ -58,14 +59,13 @@ Freely inspired by pop-shell.
 * `Super`+`Shift`+`B`: Show/hide top bar.
 
 ## Patches
-`#movestack`
+`#movestack` `#uselessgaps` `#threecolumn` `cyclelayouts*`
 
 ## TODO
 * [x] Set Keybindings
 * [ ] Enable laptop controls
     * [ ] Volume
     * [ ] Screen Brightness
-    * [ ] Trackpad tap
 * [ ] Patch / additional functionality
     * [x] Move windows
     * [x] Gaps + smart gaps option
@@ -73,9 +73,10 @@ Freely inspired by pop-shell.
     * [ ] Directional navigation
     * [ ] Status/Systray
     * [x] Monocle and Floating layout toggles
+    * [x] Cycle layouts
+    * [x] Three-column layout
+    * [ ] Spiral/Fibonacci layout
     * [ ] Hide empty tags/workspaces
     * [ ] Colors/pywal
     * [ ] Top bar color
-    * [ ] Spiral/Fibonacci layout
-    * [ ] Three-column layout
 
